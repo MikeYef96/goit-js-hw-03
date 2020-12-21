@@ -44,7 +44,7 @@ const account = {
       amount,
       Transaction.DEPOSIT
     );
-    this.transactions = [...this.transactions, newDepositTransaction];
+    this.transactions.push(newDepositTransaction);
   },
 
   /*
@@ -67,7 +67,7 @@ const account = {
         amount,
         Transaction.WITHDRAW
       );
-      this.transactions = [...this.transactions, newWithdrawTransaction];
+      this.transactions.push(newWithdrawTransaction);
     }
   },
 
