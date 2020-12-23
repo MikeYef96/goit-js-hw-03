@@ -1,9 +1,6 @@
 "use strict";
 
-const countProps = function (obj) {
-  let objArr = Object.keys(obj);
-  return objArr.length;
-};
+const countProps = (obj) => Object.keys(obj).length;
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
