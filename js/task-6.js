@@ -7,14 +7,14 @@ const products = [
 ];
 
 const calculateTotalPrice = function (allProdcuts, productName) {
-  let productArr = 0;
+  let totalPrice = 0;
 
   for (let product of products) {
     if (productName === product.name) {
-      productArr = product.price * product.quantity;
+      totalPrice = product.price * product.quantity;
     }
   }
-  return productArr;
+  return totalPrice;
 };
 
 /*
